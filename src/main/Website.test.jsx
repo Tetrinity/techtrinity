@@ -1,6 +1,9 @@
 import React from "react";
 import { shallow } from "enzyme";
+
 import Website from "./Website";
+import Header from "./frame/Header";
+import Footer from "./frame/Footer";
 
 describe("Website", () => {
     let props;
@@ -10,6 +13,8 @@ describe("Website", () => {
         if (!mountedComponent){
             mountedComponent = shallow(<Website {...props}/>)
         }
+
+        return mountedComponent;
     }
 
     beforeEach(() => {
@@ -17,7 +22,15 @@ describe("Website", () => {
         mountedComponent = undefined;
     })
 
-    it("should test something", () => {
-        
+    it("should display the header", () => {
+        const header = website().find(Header);
+
+        expect(header).not.toBeNull();
+    })
+
+    it("should display the footer", () => {
+        const footer = website().find(Footer);
+
+        expect(footer).not.toBeNull();
     })
 })
