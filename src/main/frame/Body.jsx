@@ -1,21 +1,14 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-class Body extends React.PureComponent {
+import Home from '../content/home/Home';
+import About from '../content/home/About';
 
-    constructor(props){
-        super(props);
-
-        this.state = {}
-    }
-
-    render(){
-        return (
-            <div className="body">
-                test body content
-            </div>
-        )
-    }
-
-}
+const Body = () => (
+    <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route path="/about" component={About}/>
+    </Switch>
+)
 
 export default Body;
