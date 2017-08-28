@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from './frame/Header'
-import Footer from './frame/Footer'
+import Header from './frame/Header';
+import Body from './frame/Body';
+import Footer from './frame/Footer';
 
 class Website extends React.PureComponent {
 
@@ -8,7 +9,7 @@ class Website extends React.PureComponent {
         return (
             <div>
                 <Header/>
-
+                <Body/>
                 <Footer/>
             </div>
         )

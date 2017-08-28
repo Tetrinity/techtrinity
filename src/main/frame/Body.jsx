@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Copyright from './Copyright';
-
-class Footer extends React.PureComponent {
+class Body extends React.PureComponent {
 
     constructor(props){
         super(props);
@@ -12,12 +10,12 @@ class Footer extends React.PureComponent {
 
     render(){
         return (
-            <div>
-                <Copyright/>
+            <div className="body">
+                test body content
             </div>
         )
     }
 
 }
 
-export default Footer;
+export default Body;
