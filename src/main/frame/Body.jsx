@@ -5,10 +5,12 @@ import Home from '../content/home/Home';
 import About from '../content/home/About';
 
 const Body = () => (
-    <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-    </Switch>
+    <div className="body">
+        <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={About}/>
+        </Switch>
+    </div>
 )
 
 export default Body;

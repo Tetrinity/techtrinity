@@ -12,7 +12,7 @@ class Footer extends React.PureComponent {
 
     render(){
         return (
-            <div>
+            <div className="footer">
                 <Copyright/>
             </div>
         )
