@@ -1,0 +1,39 @@
+@import "colours";
+
+.navbar {
+    background-color: @black;
+    border-color: @black;
+    border-radius: 0;
+
+    a {
+        color: @off-white !important;
+    }
+}
+
+.header-link {
+    border: 2px solid @off-white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media (min-width: 768px){
+    .navbar a:not(.navbar-brand){
+        .header-link;
+
+        margin-top: 7px;
+        margin-right: 2px;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar-brand  {
+        height: 40px;
+    }
+
+    .navbar a:not(.navbar-brand){
+        .header-link;
+
+        margin-top: 2px;
+    }
+}
