@@ -4,6 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import Website from './main/Website'
 
-import './index.css';
+import './index.min.css';
 
 ReactDOM.render(<Router><Website/></Router>, document.getElementById('root'));
