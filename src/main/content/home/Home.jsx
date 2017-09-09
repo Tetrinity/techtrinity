@@ -10,8 +10,13 @@ class Home extends React.PureComponent {
 
     render(){
         return (
-            <div>
-                test home page content
+            <div className="home">
+                <div className="col main">
+                    test home page content
+                </div>
+                <div className="col side">
+                    second panel
+                </div>
             </div>
         )
     }

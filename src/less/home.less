@@ -1,0 +1,21 @@
+@import "colours";
+
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .col {
+        padding: 0 10px;
+    }
+
+    .main {
+        border-right: 1px solid @green;
+        flex-grow: 1.5;
+    }
+
+    .side {
+        flex-grow: 1;
+    }
+}
