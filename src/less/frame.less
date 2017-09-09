@@ -2,7 +2,18 @@
 
 .site {
     background-color: @off-white;
-    color: @black;
+    .base-font;
+
+    h2, .title {
+        .header-font;
+        border-bottom: 1px dashed @black;
+        padding-bottom: 0;
+        margin: 0 0 23px 0;
+    }
+    
+    p {
+        margin: 0 0 23px 0;
+    }
 }
 
 .body {

@@ -12,7 +12,13 @@ class Home extends React.PureComponent {
         return (
             <div className="home">
                 <div className="col main">
-                    test home page content
+                    <h2 className="title">About Me</h2>
+                    <p className="intro">
+                        My name is Sam Gibbon, and I am a full stack developer.
+                    </p>
+                    <p>
+                        Second paragraph
+                    </p>
                 </div>
                 <div className="col side">
                     second panel
