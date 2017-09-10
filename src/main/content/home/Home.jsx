@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Title from '../common/Title';
+import IconLink from '../common/IconLink';
 
 class Home extends React.PureComponent {
 
@@ -23,7 +24,8 @@ class Home extends React.PureComponent {
                     </p>
                 </div>
                 <div className="col side">
-                    second panel
+                    <Title text="Online"/>
+                    <IconLink icon="GitHub.png" text="GitHub" href="https://github.com/Tetrinity"/>
                 </div>
             </div>
         )
