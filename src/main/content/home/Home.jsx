@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Title from '../common/Title';
+
 class Home extends React.PureComponent {
 
     constructor(props){
@@ -12,7 +14,7 @@ class Home extends React.PureComponent {
         return (
             <div className="home">
                 <div className="col main">
-                    <h2 className="title">About Me</h2>
+                    <Title text="About Me"/>
                     <p className="intro">
                         My name is Sam Gibbon, and I am a full stack developer.
                     </p>
