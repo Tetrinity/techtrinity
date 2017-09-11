@@ -26,6 +26,7 @@ class Home extends React.PureComponent {
                 <div className="col side">
                     <Title text="Online"/>
                     <IconLink icon="GitHub.png" text="GitHub" href="https://github.com/Tetrinity"/>
+                    <IconLink icon="Stack_Overflow.png" text="Stack Overflow" href="https://stackoverflow.com/users/3219738/tetrinity?tab=profile"/>
                 </div>
             </div>
         )
