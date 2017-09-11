@@ -27,6 +27,7 @@ class Home extends React.PureComponent {
                     <Title text="Online"/>
                     <IconLink icon="GitHub.png" text="GitHub" href="https://github.com/Tetrinity"/>
                     <IconLink icon="Stack_Overflow.png" text="Stack Overflow" href="https://stackoverflow.com/users/3219738/tetrinity?tab=profile"/>
+                    <IconLink icon="LinkedIn.png" text="LinkedIn™" href="https://www.linkedin.com/in/sam-gibbon-7b1289b7/"/>
                 </div>
             </div>
         )
