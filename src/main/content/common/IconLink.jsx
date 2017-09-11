@@ -8,6 +8,8 @@ const IconLink = (props) => (
             className = "icon"
         />
         <a
+            target = "_blank"
+            rel = "noopener noreferrer"
             href = {props.href}
             className = "iconLinkText"
         >
