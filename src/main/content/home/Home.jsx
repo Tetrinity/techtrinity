@@ -15,7 +15,7 @@ class Home extends React.PureComponent {
         return (
             <div className="home">
                 <div className="col main">
-                    <Title text="About Me"/>
+                    <Title text="About Me" large/>
                     <p className="intro">
                         My name is Sam Gibbon, and I am a full stack developer.
                     </p>
@@ -24,7 +24,7 @@ class Home extends React.PureComponent {
                     </p>
                 </div>
                 <div className="col side">
-                    <Title text="Online"/>
+                    <Title text="Online" separator/>
                     <IconLink icon="GitHub.png" text="GitHub" href="https://github.com/Tetrinity"/>
                     <IconLink icon="Stack_Overflow.png" text="Stack Overflow" href="https://stackoverflow.com/users/3219738/tetrinity?tab=profile"/>
                     <IconLink icon="LinkedIn.png" text="LinkedIn™" href="https://www.linkedin.com/in/sam-gibbon-7b1289b7/"/>

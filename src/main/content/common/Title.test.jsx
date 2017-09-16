@@ -27,4 +27,20 @@ describe("Title", () => {
         const titleText = title().find(".title").text();
         expect(titleText).toEqual(text);
     })
+
+    it("should display a large version if the \"large\" prop is set", () => {
+        props.large = true;
+
+        expect(title().find(".title").hasClass("largeTitle"));
+    })
+
+    it("should display a small version if the \"large\" prop is not set", () => {
+        expect(title().find(".title").hasClass("smallTitle"));
+    })
+
+    it("should display a separator if the appropriate prop is set", () => {
+        props.separator = true;
+
+        expect(title().find(".title").hasClass("separator"));
+    })
 })
