@@ -1,4 +1,5 @@
 @import "colours";
+@import "responsive";
 
 .navbar {
     background-color: @black;
@@ -21,7 +22,7 @@
     padding-bottom: 5px;
 }
 
-@media (min-width: 768px){
+@media (min-width: @mobile-threshold){
     .navbar a:not(.navbar-brand){
         .header-link;
 
@@ -30,7 +31,7 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: @mobile-threshold){
     .navbar-brand  {
         height: 40px;
     }
