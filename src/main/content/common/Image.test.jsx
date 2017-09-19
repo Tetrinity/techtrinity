@@ -43,4 +43,12 @@ describe("Image", () => {
 
         expect(image().find("div").length).toEqual(1);
     })
+
+    it("should pass the specified CSS class to the image", () => {
+        props.static = true;
+        props.name = "example.png"
+        props.class = "someClass";
+
+        expect(image().find("img").hasClass(props.class));
+    })
 })

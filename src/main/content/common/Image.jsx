@@ -17,7 +17,7 @@ class Image extends React.PureComponent {
                 <img
                     src = {"images/content/" + imageLocation}
                     alt = {imageLocation}
-                    className = "profile"
+                    className = {this.props.class}
                 />
             </div>
         )

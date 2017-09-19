@@ -16,7 +16,7 @@ class Home extends React.PureComponent {
         return (
             <div className="home">
                 <div className="col main">
-                    <Image static name="SG-Photo.jpeg"/>
+                    <Image static class="profile" name="SG-Photo.jpeg"/>
                     <Title text="About Me" large/>
                     <p className="intro">
                         My name is Sam Gibbon, and I am a full stack developer.
