@@ -17,13 +17,10 @@ class Home extends React.PureComponent {
             <div className="home">
                 <div className="col main">
                     <Image static class="profile" name="SG-Photo.jpeg"/>
-                    <Title text="About Me" large/>
-                    <p className="intro">
-                        My name is Sam Gibbon, and I am a full stack developer.
-                    </p>
-                    <p>
-                        Second paragraph
-                    </p>
+                    <div className="intro">
+                        <Title text="Sam Gibbon" large/>
+                        <Title text="Full Stack Developer"/>
+                    </div>
                 </div>
                 <div className="col side">
                     <Title text="Online" separator/>
