@@ -18,9 +18,17 @@ class Home extends React.PureComponent {
                 <div className="col main">
                     <Image static class="profile" name="SG-Photo.jpeg"/>
                     <div className="intro">
-                        <Title text="Sam Gibbon" large/>
+                        <Title text="Sam Gibbon" size="large"/>
                         <Title text="Full Stack Developer"/>
                     </div>
+                    <p>
+                        <Title text="Test header" size="small"/>
+                        <span className="indent">test content</span>
+                    </p>
+                    <p>
+                        <Title text="Second header" size="small"/>
+                        <span className="indent">more content</span>
+                    </p>
                 </div>
                 <div className="col side">
                     <Title text="Online" separator/>

@@ -28,14 +28,20 @@ describe("Title", () => {
         expect(titleText).toEqual(text);
     })
 
-    it("should display a large version if the \"large\" prop is set", () => {
-        props.large = true;
+    it("should display a large version if the size prop is set to \"large\"", () => {
+        props.size = "large";
 
         expect(title().find(".title").hasClass("largeTitle"));
     })
+    
+    it("should display a small version if the size prop is set to \"small\"", () => {
+        props.size = "small";
 
-    it("should display a small version if the \"large\" prop is not set", () => {
         expect(title().find(".title").hasClass("smallTitle"));
+    })
+
+    it("should display a normal version if no size prop has been set", () => {
+        expect(title().find(".title").hasClass("mediumTitle"));
     })
 
     it("should display a separator if the appropriate prop is set", () => {

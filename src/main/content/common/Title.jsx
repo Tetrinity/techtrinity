@@ -2,12 +2,15 @@ import React from 'react';
 
 class Title extends React.PureComponent {
     render(){
-        const isLarge = this.props.large;
+        const size = this.props.size;
         const hasSeparator = this.props.separator;
 
         let titleClass = "";
 
-        if (isLarge){ titleClass += "largeTitle " } else { titleClass += "smallTitle " }
+        if (size == "large"){ titleClass += "largeTitle " }
+        else if (size == "small"){ titleClass += "smallTitle " }
+        else { titleClass += "mediumTitle " }
+
         if (hasSeparator){ titleClass += "separator " }
 
         return (
