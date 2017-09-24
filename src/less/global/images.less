@@ -1,0 +1,21 @@
+.image-with-ratio(@height, @aspectRatio: 1){
+    height: @height;
+    width: @height * @aspectRatio;
+}
+
+@media (min-width: @mobile-threshold){
+    .profile {
+        .image-with-ratio(360px, 0.75);
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: @mobile-threshold){
+    .profile {
+        .image-with-ratio(200px, 0.75);
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
