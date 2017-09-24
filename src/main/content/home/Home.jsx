@@ -22,12 +22,16 @@ class Home extends React.PureComponent {
                         <Title text="Full Stack Developer"/>
                     </div>
                     <p>
-                        <Title text="Test header" size="small"/>
-                        <span className="indent">test content</span>
+                        <Title text="Stereotypical Nerd..." size="small"/>
+                        <span className="indent">Professional software developer, board gamer, Rubik's Cube enthusiast</span>
                     </p>
                     <p>
-                        <Title text="Second header" size="small"/>
-                        <span className="indent">more content</span>
+                        <Title text="...But Working On It" size="small"/>
+                        <span className="indent">Triathlete, drummer, creative writer</span>
+                    </p>
+                    <p>
+                        <Title text="Overall a decent chap" size="small"/>
+                        <span className="indent">citation needed</span>
                     </p>
                 </div>
                 <div className="col side">
