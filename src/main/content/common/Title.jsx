@@ -7,8 +7,8 @@ class Title extends React.PureComponent {
 
         let titleClass = "";
 
-        if (size == "large"){ titleClass += "largeTitle " }
-        else if (size == "small"){ titleClass += "smallTitle " }
+        if (size === "large"){ titleClass += "largeTitle " }
+        else if (size === "small"){ titleClass += "smallTitle " }
         else { titleClass += "mediumTitle " }
 
         if (hasSeparator){ titleClass += "separator " }
