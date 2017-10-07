@@ -4,12 +4,34 @@ import Title from '../common/Title';
 import IconLink from '../common/IconLink';
 import Image from "../common/Image";
 
+import WordpressActions from '../../../flux/actions/WordpressActions';
+import WordpressStore from '../../../flux/stores/WordpressStore';
+
 class Home extends React.PureComponent {
 
     constructor(props){
         super(props);
 
         this.state = {}
+
+        this.onPostsUpdate = this.onPostsUpdate.bind(this);
+    }
+
+    getInitialState(){
+        return WordpressStore.getState();
+    }
+
+    componentDidMount(){
+        WordpressStore.listen(this.onPostsUpdate);
+        WordpressActions.fetchPosts();
+    }
+    componentWillUnmount(){
+        WordpressStore.unlisten(this.onPostsUpdate);
+    }
+
+    onPostsUpdate(state){
+        console.log("Updated state: " + JSON.stringify(state));
+        this.setState(state);
     }
 
     render(){
