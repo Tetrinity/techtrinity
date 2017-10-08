@@ -36,7 +36,7 @@ describe("BlogPost", () => {
             content: {
                 rendered: "Test Content"
             },
-            date: "some date"
+            date: "2017-10-01T12:30:00Z"
         }
 
         const blogPostDiv = blogPost().find(".blogPost");
@@ -48,4 +48,23 @@ describe("BlogPost", () => {
         expect(blogPostDiv.find(Title).props().text).toEqual(props.json.title.rendered);
         expect(blogPostDiv.find(Timestamp).props().time).toEqual(props.json.date);
     });
+
+    it("should render a preview of the post if the appropriate prop is set", () => {
+        props.json = {
+            title: {
+                rendered: "Test Post"
+            },
+            content: {
+                rendered: "Full Post"
+            },
+            excerpt: {
+                rendered: "Excerpt"
+            },
+            date: "2017-10-01T12:30:00Z"
+        }
+        props.preview = true;
+        
+        const blogPostDiv = blogPost().find(".blogPost");
+        expect(blogPostDiv.render().find(".content").text()).toEqual("Excerpt");
+    })
 })

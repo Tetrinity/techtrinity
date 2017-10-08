@@ -17,18 +17,20 @@ class BlogPost extends React.PureComponent {
             )
         }
 
+        let isPreview = this.props.preview;
+
         let title = json.title.rendered;
         let datePosted = json.date;
-        let content = { __html: json.content.rendered };
+
+        let content;
+        if (isPreview){ content = { __html: json.excerpt.rendered } }
+        else { content = { __html: json.content.rendered } }
         
         return (
             <div className="blogPost">
                 <Title noSpacer separator text={title}/>
                 <Timestamp time={datePosted}/>
-                <div className="content">
-                    <div dangerouslySetInnerHTML={content}></div>
-                </div>
-                {JSON.stringify(json)}
+                <div className="content" dangerouslySetInnerHTML={content}></div>
             </div>
         )
     }
