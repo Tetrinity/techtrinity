@@ -49,4 +49,10 @@ describe("Title", () => {
 
         expect(title().find(".title").hasClass("separator"));
     })
+
+    it("should not have a bottom margin if the appropriate prop is set", () => {
+        props.noSpacer = true;
+
+        expect(title().find(".title").hasClass("noSpacer"));
+    })
 })

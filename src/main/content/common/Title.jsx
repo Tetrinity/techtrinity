@@ -4,6 +4,7 @@ class Title extends React.PureComponent {
     render(){
         const size = this.props.size;
         const hasSeparator = this.props.separator;
+        const hasNoSpacer = this.props.noSpacer;
 
         let titleClass = "";
 
@@ -12,6 +13,7 @@ class Title extends React.PureComponent {
         else { titleClass += "mediumTitle " }
 
         if (hasSeparator){ titleClass += "separator " }
+        if (hasNoSpacer){ titleClass += "noSpacer " }
 
         return (
             <h2 className={"title " + titleClass}>{this.props.text}</h2>
