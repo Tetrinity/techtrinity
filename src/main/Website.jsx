@@ -3,12 +3,17 @@ import Header from './frame/Header';
 import Body from './frame/Body';
 import Footer from './frame/Footer';
 
-const Website = () => (
-    <div className="site">
-        <Header/>
-        <Body/>
-        <Footer/>
-    </div>
-);
+class Website extends React.PureComponent {
+
+    render(){
+        return (
+            <div className="site">
+                <Header/>
+                <Body/>
+                <Footer/>
+            </div>
+        )
+    }
+}
 
 export default Website;

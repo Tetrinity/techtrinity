@@ -1,27 +1,36 @@
 .home {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-direction: column;
 
-    .col {
-        padding: 0 10px;
+    .top {
+        display: flex;
+
+        .col {
+            padding: 0 10px;
+        }
+    
+        .main {
+            border-right: 1px solid @green;
+            flex-grow: 1.5;
+        }
+    
+        .side {
+            flex-grow: 1;
+        }
+    
+        .intro {
+            text-align: center;
+        }
+    
+        .indent {
+            margin-left: 2rem;
+        }
     }
 
-    .main {
-        border-right: 1px solid @green;
-        flex-grow: 1.5;
-    }
+    .blogPreview {
+        border-top: 1px solid @green;
 
-    .side {
-        flex-grow: 1;
-    }
-
-    .intro {
-        text-align: center;
-    }
-
-    .indent {
-        margin-left: 2rem;
+        margin-top: 10px;
+        padding-top: 15px;
     }
 }
