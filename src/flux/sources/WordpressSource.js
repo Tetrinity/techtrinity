@@ -1,6 +1,6 @@
 import Api from './BaseApi';
 
-let wordpressUrl = "http://www.techtrinity.co.uk/blog";
+let wordpressUrl = "https://www.techtrinity.co.uk/blog";
 
 let pagesEndPoint = wordpressUrl + "/wp-json/wp/v2/pages"
 let postsEndPoint = wordpressUrl + "/wp-json/wp/v2/posts"
